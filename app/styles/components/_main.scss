@@ -1,0 +1,30 @@
+#wrapper {
+	width: 90%;
+	max-width: 1100px;
+	min-width: 800px;
+	margin: 80px auto;
+}
+
+#columns {
+  column-count: 4;
+  column-gap: 15px;
+  column-fill: auto;  
+}
+
+.pin {
+  display: inline-block;
+  margin: 0 2px 15px;
+  padding: 15px;
+  
+  img {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+    margin-bottom: 5px;
+  }
+  .caption {
+    font: 14px Arial, sans-serif;
+    color: #333;
+    margin: 0;
+  }
+}
