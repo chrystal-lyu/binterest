@@ -1,7 +1,14 @@
 .top-bar {
+  background: white;
+  border-bottom: 1px solid lightgrey;  
+  padding: 0;
   position: fixed;
   width: 100%;
   top: 0;
+  z-index:999;
+  ul {
+    background-color: white;
+  }
 }
 
 .avatar{
