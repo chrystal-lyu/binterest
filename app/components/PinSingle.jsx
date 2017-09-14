@@ -1,18 +1,17 @@
 import React from 'react';
+import {Link} from 'react-router';
 
 export class PinSingle extends React.Component {
   render() {
+    const {pin, i} = this.props;
     return(
-      <div id="wrapper">
-        <div className="test">
-          <div className="single-pin"> 
-            <img src="https://i.pinimg.com/564x/f2/a5/e3/f2a5e3bbf3b8bd38fa449fe3c3ae2b37.jpg"/>
-            <div className="caption overlay">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-          </div>
-        </div>
+      <div className="pin">
+        <div><button className="button">+ Save</button></div>
+        <Link to={`/pins/${pin.id}`}><img src={pin.photo_src} /></Link>
+        <div className="caption overlay">{pin.captions}</div>
       </div>
     )
-  }
-}
+  };
+};
 
 export default PinSingle;

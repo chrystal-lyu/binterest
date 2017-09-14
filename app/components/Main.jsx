@@ -1,11 +1,11 @@
 import React from 'react';
 import {Link} from 'react-router';
+import {connect} from 'react-redux';
 
 import Navigation from 'Navigation';
 
 export class Main extends React.Component {
   render() {
-    console.log(this.props)
     return(
       <div>
         <div>
@@ -24,4 +24,10 @@ export class Main extends React.Component {
   }
 };
 
-export default Main;
+const mapStatetoProps = (state) => {
+  return {
+    pins: state.pins
+  }
+}
+
+export default connect(mapStatetoProps)(Main);
